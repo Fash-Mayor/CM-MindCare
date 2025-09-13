@@ -1,88 +1,546 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-    <title>Change Makers MindCare</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - MediNest Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
 
-<body>
-    <!-- Header -->
-    <header
-        class="flex flex-row justify-between items-center py-4 sm:px-10 font-semibold tetx-2xl sticky top-0 bg-white shadow-md z-10 ">
-        <img src="images/main-image-edited.jpg" alt="logo" class="h-24">
-        <nav>
-            <ul class="flex flex-col md:flex-row justify-between">
-                <li><a href="#" class="m-4 text-lg text-teal-600">Home</a></li>
-                <li><a href="about.html" class="m-4 text-lg text-gray-700 hover:text-teal-600">About</a></li>
-                <li><a href="#" class="m-4 text-lg text-gray-700 hover:text-teal-600">Contact</a></li>
-            </ul>
-        </nav>
-        <div>
-            <ul>
-                <li><a href="https://wa.me/2349168947722" class="bg-teal-700 text-white px-4 py-2 rounded-md hover:bg-teal-500">Chat Now!</a></li>
-            </ul>
-        </div>
-    </header>
+<body class="index-page">
 
-    <!-- hero section -->
-    <main class="md:mx-auto flex flex-col md:flex-row justify-center">
-        <div class="p-2 md:p-10 mx-auto justify-center bg-sky-50 sm:h-60 md:h-130 md:w-1/2">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-teal-900 leading-snug">Affordable Mental Heath Solutions
-                for Students and Youths</h1>
-            <p class="text-xl my-5 text-gray-600">Chat with a Therapist Now -- No Sign-Up Needed.</p>
-            <a href="https://wa.me/2349168947722" class="bg-teal-700 text-white px-4 py-2 rounded-md hover:bg-teal-500">Chat Now!</a>
-        </div>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
 
-        <div class="flex items-center justify-center p-8 bg-teal-800 md:w-1/2">
-            <img src="images/main-image.jpg" alt="" class="rounded-lg shadow-lg w-full max-w-xs md:max-w-md">
-        </div>
-    </main>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">CM<span>MindCare</span></h1>
+      </a>
 
-    <!-- Mission -->
-    <section class="text-center my-20 mx-8 px-8">
-        <p class="text-3xl text-teal-700 font-bold">Our Mission</p>
-        <p class="mt-6 text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
-            ChangeMakers Mindcare provides affordable, anonymous, and youth-friendly mental health support — connecting
-            students and young people
-            with professional care anytime, anywhere
-        </p>
-    </section>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#top" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="#find-a-doctor">Team</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-   <!-- Specialists -->
-  <section class="px-6 py-16">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto items-center">
-      <div>
-        <h2 class="text-2xl font-bold text-teal-900 mb-6">
-          We offer a wide range of specialists for your health
-        </h2>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="bg-sky-50 p-4 rounded shadow text-center font-medium">Therapy</div>
-          <div class="bg-sky-50 p-4 rounded shadow text-center font-medium">Psychiatry</div>
-          <div class="bg-sky-50 p-4 rounded shadow text-center font-medium">Neuropsychiatry</div>
-          <div class="bg-sky-50 p-4 rounded shadow text-center font-medium">Neurology</div>
+      <a class="btn-getstarted" href="">Chat Now</a>
+
+    </div>
+  </header>
+
+  <main class="main" id="top">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class="hero-image" data-aos="fade-right" data-aos-delay="100">
+              <img src="assets/img/health/staff-8.webp" alt="Healthcare Professional" class="img-fluid main-image">
+              <div class="floating-card emergency-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-content">
+                  <i class="bi bi-telephone-fill"></i>
+                  <div class="text">
+                    <span class="label">24/7 Chat</span>
+                    <a href="">
+                    <span class="number">+(234)9168947722</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="floating-card stats-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                  <span class="number">25K+</span>
+                  <span class="label">Patients Treated</span>
+                </div>
+                <div class="stat-item">
+                  <span class="number">98%</span>
+                  <span class="label">Satisfaction Rate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="hero-content" data-aos="fade-left" data-aos-delay="200">
+              <div class="badge-container">
+                <span class="hero-badge">Trusted Healthcare Provider</span>
+              </div>
+
+              <h1 class="hero-title">Affordable Mental Heath Solutions for Students and Youths</h1>
+              <p class="hero-description">Chat with a Therapist Now -- No Sign-Up Needed.</p>
+
+              <div class="cta-section">
+                <div class="cta-buttons">
+                  <a href="#" class="btn btn-primary">Chat Now</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div>
-        <a href="about.html"><img src="images/team-members.jpg" alt="Specialist"
-          class="rounded-lg shadow" /></a>
+
+      <div class="background-elements">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-pattern"></div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- Mission Section -->
+    <section id="home-about" class="home-about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="50">
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up" data-aos-delay="50">
+            <h2 class="section-heading">Our Mission</h2>
+            <p class="lead-description">ChangeMakers Mindcare provides affordable, anonymous, and youth-friendly mental health support — connecting
+            students and young people
+            with professional care anytime, anywhere</div>
+        </div>
+
+      </div>
+
+    </section><!-- /Home About Section -->
+
+    <!-- Featured Departments Section -->
+    <section id="featured-departments" class="featured-departments section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="50">
+
+        <div class="departments-showcase">
+
+          <div class="departments-cta" data-aos="fade-up" data-aos-delay="600">
+            <div class="cta-content">
+              <h3 class="cta-title" id="about">About Us</h3>
+              <p class="cta-description">
+                ChangeMakers Mindcare was founded by Samuel Oyewole Ajayi with a simple but powerful vision: 
+                to make mental health care affordable, accessible, and stigma-free for young people.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Departments Section -->
+
+    <!-- meet the team -->
+    <section id="find-a-doctor" class="find-a-doctor section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-10">
+            <div class="search-header">
+              <h2>Meet The Team</h2>
+              <p>Backed by a passionate team of clinical psychologists, psychiatrists, and counselors, 
+                we provide anonymous, professional support that helps students and youth overcome stress, anxiety, 
+                and everyday mental health challenges.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="specialists-showcase" data-aos="fade-up" data-aos-delay="300">
+          <div class="specialist-card featured" data-aos="slide-up" data-aos-delay="100">
+            <div class="card-content">
+              <div class="specialist-info">
+                <div class="profile-section">
+                  <div class="profile-image">
+                    <img src="assets/img/health/staff-1.webp" alt="Dr. Jennifer Morgan" class="img-fluid">
+                    <div class="online-status active"></div>
+                  </div>
+                  <div class="specialist-data">
+                    <h3>Dr. Jennifer Morgan</h3>
+                    <p class="specialty">Senior Cardiologist</p>
+                    <div class="credentials">
+                      <span class="badge">MD, FACC</span>
+                      <span class="experience">18 years</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating-info">
+                  <div class="stars-display">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <span class="score">4.9</span>
+                  <small>(142 patients)</small>
+                </div>
+              </div>
+              <div class="quick-actions">
+                <a href="#" class="action-btn outline">Profile</a>
+                <a href="#" class="action-btn primary">Consult</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="specialist-card" data-aos="slide-up" data-aos-delay="200">
+            <div class="card-content">
+              <div class="specialist-info">
+                <div class="profile-section">
+                  <div class="profile-image">
+                    <img src="assets/img/health/staff-3.webp" alt="Dr. Robert Kim" class="img-fluid">
+                    <div class="online-status busy"></div>
+                  </div>
+                  <div class="specialist-data">
+                    <h3>Dr. Robert Kim</h3>
+                    <p class="specialty">Neurosurgeon</p>
+                    <div class="credentials">
+                      <span class="badge">MD, PhD</span>
+                      <span class="experience">24 years</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating-info">
+                  <div class="stars-display">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <span class="score">4.8</span>
+                  <small>(98 patients)</small>
+                </div>
+              </div>
+              <div class="quick-actions">
+                <a href="#" class="action-btn outline">Profile</a>
+                <a href="#" class="action-btn primary">Schedule</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="specialist-card" data-aos="slide-up" data-aos-delay="300">
+            <div class="card-content">
+              <div class="specialist-info">
+                <div class="profile-section">
+                  <div class="profile-image">
+                    <img src="assets/img/health/staff-5.webp" alt="Dr. Sarah Thompson" class="img-fluid">
+                    <div class="online-status active"></div>
+                  </div>
+                  <div class="specialist-data">
+                    <h3>Dr. Sarah Thompson</h3>
+                    <p class="specialty">Pediatric Specialist</p>
+                    <div class="credentials">
+                      <span class="badge">MD, FAAP</span>
+                      <span class="experience">12 years</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating-info">
+                  <div class="stars-display">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <span class="score">5.0</span>
+                  <small>(156 patients)</small>
+                </div>
+              </div>
+              <div class="quick-actions">
+                <a href="#" class="action-btn outline">Profile</a>
+                <a href="#" class="action-btn primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="specialist-card" data-aos="slide-up" data-aos-delay="400">
+            <div class="card-content">
+              <div class="specialist-info">
+                <div class="profile-section">
+                  <div class="profile-image">
+                    <img src="assets/img/health/staff-7.webp" alt="Dr. Michael Rivera" class="img-fluid">
+                    <div class="online-status offline"></div>
+                  </div>
+                  <div class="specialist-data">
+                    <h3>Dr. Michael Rivera</h3>
+                    <p class="specialty">Orthopedic Surgeon</p>
+                    <div class="credentials">
+                      <span class="badge">MD, FAAOS</span>
+                      <span class="experience">20 years</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating-info">
+                  <div class="stars-display">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <span class="score">4.7</span>
+                  <small>(134 patients)</small>
+                </div>
+              </div>
+              <div class="quick-actions">
+                <a href="#" class="action-btn outline">Profile</a>
+                <a href="#" class="action-btn primary">Request</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="specialist-card" data-aos="slide-up" data-aos-delay="500">
+            <div class="card-content">
+              <div class="specialist-info">
+                <div class="profile-section">
+                  <div class="profile-image">
+                    <img src="assets/img/health/staff-9.webp" alt="Dr. Lisa Garcia" class="img-fluid">
+                    <div class="online-status active"></div>
+                  </div>
+                  <div class="specialist-data">
+                    <h3>Dr. Lisa Garcia</h3>
+                    <p class="specialty">Dermatologist</p>
+                    <div class="credentials">
+                      <span class="badge">MD, FAAD</span>
+                      <span class="experience">15 years</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating-info">
+                  <div class="stars-display">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <span class="score">4.6</span>
+                  <small>(89 patients)</small>
+                </div>
+              </div>
+              <div class="quick-actions">
+                <a href="#" class="action-btn outline">Profile</a>
+                <a href="#" class="action-btn primary">Consult</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="specialist-card" data-aos="slide-up" data-aos-delay="600">
+            <div class="card-content">
+              <div class="specialist-info">
+                <div class="profile-section">
+                  <div class="profile-image">
+                    <img src="assets/img/health/staff-12.webp" alt="Dr. Daniel Wong" class="img-fluid">
+                    <div class="online-status active"></div>
+                  </div>
+                  <div class="specialist-data">
+                    <h3>Dr. Daniel Wong</h3>
+                    <p class="specialty">Oncology Expert</p>
+                    <div class="credentials">
+                      <span class="badge">MD, FASCO</span>
+                      <span class="experience">21 years</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating-info">
+                  <div class="stars-display">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <span class="score">4.9</span>
+                  <small>(211 patients)</small>
+                </div>
+              </div>
+              <div class="quick-actions">
+                <a href="#" class="action-btn outline">Profile</a>
+                <a href="#" class="action-btn primary">Appointment</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Find A Doctor Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="services-grid" data-aos="fade-up" data-aos-delay="500">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <h4>Private Sessions</h4>
+                <p>Private one-on-one sessions with trained mental health professionals.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <h4>Accessible</h4>
+                <p>24/7 online access to support</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h4>Anonimity</h4>
+                <p>You can remain anonymous while you use our services</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">MediNest</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div>
+
       </div>
     </div>
-  </section>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t py-8 px-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="text-gray-600">© 2025 Change Makers Mind Care. All rights reserved.</div>
-            <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" class="text-gray-600 hover:text-teal-700">Privacy Policy</a>
-                <a href="#" class="text-gray-600 hover:text-teal-700">Terms</a>
-                <a href="#" class="text-gray-600 hover:text-teal-700">Support</a>
-            </div>
-        </div>
-    </footer>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong>MediNest</strong>&nbsp;<span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
