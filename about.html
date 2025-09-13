@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        /* hide x-cloak elements until Alpine initializes */
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- Alpine (only include once on the page) -->
+    <script src="https://unpkg.com/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+
+    <header x-data="{ open: false }"
+        class="flex flex-wrap justify-between items-center py-4 px-6 sm:px-10 font-semibold text-lg sticky top-0 bg-white shadow-md z-20">
+
+        <!-- Logo -->
+         <a href="index.html">
+            <img src="../CM-MindCare/images/main-image-edited.jpg" alt="logo" class="h-16 md:h-24 object-contain">
+        </a>
+
+        <!-- Hamburger button (mobile only) -->
+        <button @click="open = !open" :aria-expanded="open.toString()" aria-controls="mobile-menu"
+            class="md:hidden ml-2 p-1 rounded focus:outline-none focus:ring-2 focus:ring-teal-300">
+            <!-- Hamburger -->
+            <svg x-show="!open" x-cloak xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-teal-700" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <!-- Close X -->
+            <svg x-show="open" x-cloak xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-teal-700" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <!-- Nav (desktop visible via md:flex; mobile toggled by adding 'block' or 'hidden') -->
+        <nav id="mobile-menu" :class="open ? 'block bg-gray-50 shadow-md' : 'hidden'"
+            class="w-full md:w-auto md:flex md:items-center md:space-x-6 mt-4 md:mt-0 rounded-b md:rounded-none">
+            <ul class="flex flex-col md:flex-row items-center md:space-x-6 p-6 md:p-0">
+                <li><a href="index.html" class="text-gray-700 hover:text-teal-600">Home</a></li>
+                <li><a href="about.html" class="text-teal-600">About</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-teal-600">Contact</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-teal-600">Achievements</a></li>
+
+                <!-- Chat Now button sits inside the nav so it collapses with the menu on mobile -->
+                <li class="mt-2 md:mt-0">
+                    <a href="https://wa.me/2349168947722"
+                        class="bg-teal-700 text-white px-4 py-2 rounded-md hover:bg-teal-500 block md:inline-block text-center">
+                        Chat Now!
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+
+    <section>
+        <h1 class="text-4xl text-teal-900 font-bold text-center my-12">About Us</h1>
+
+        <div class="flex flex-col md:flex-row mb-12 justify-center items-center">
+            <img src="images/main-head-image.jpg" alt="" class="max-h-100 w-96">
+            <p class="md:mx-8 max-w-3/4 md:max-w-2/4 text-xl text-gray-600">
+                ChangeMakers Mindcare was founded by Samuel Oyewole Ajayi with a simple but powerful vision:
+                to make mental health care affordable, accessible, and stigma-free for young people.
+            </p>
+        </div>
+
+        <hr class="text-gray-600 h-0.5 my-12 mx-auto w-3/4">
+
+        <div class="flex flex-col md:flex-row mb-12 justify-center items-center">
+            <p class="md:mx-8 max-w-3/4 md:max-w-2/4 text-xl text-gray-600">
+                Backed by a passionate team of clinical psychologists, psychiatrists, and counselors, we provide
+                anonymous,
+                professional support that helps students and youth overcome stress, anxiety, and everyday mental health
+                challenges.
+            </p>
+            <img src="images/team-members.jpg" alt="" class="max-h-100 w-96 rounded">
+        </div>
+    </section>
+
+    <p class="text-2xl md:text-3xl font-semibold text-teal-900 text-center my-26">
+        ✨Together, we are changing the story of mental health — one student at a time✨
+    </p>
+
+    <aside class="w-3/4 sm:w-4/5 mx-auto mb-12">
+        <p class="text-center font-bold text-3xl text-teal-900 underline mt-21 mb-12">FAQ's</p>
+
+        <!-- FAQ 1 -->
+        <div class="border rounded mb-4">
+            <button class="flex justify-between items-center w-full p-4 bg-sky-100 hover:bg-teal-400 focus:outline-none">
+                <span class="font-semibold text-xl">Is it really anonymous?</span>
+                <svg class="w-9 h-9 transition-transform duration-300 transform" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+                    </path>
+                </svg>
+            </button>
+            <div class="answer p-4 border-t border-gray-200">
+                <p class="text-xl">
+                    Yes. At ChangeMakers Mindcare, your privacy comes first. You don’t need to sign up, create an account, 
+                    or share personal details to use our platform. You can start a conversation with a mental health professional 
+                    completely anonymously.
+                </p>
+            </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="border rounded mb-4">
+            <button class="flex justify-between items-center w-full p-4 bg-sky-100 hover:bg-teal-400 focus:outline-none">
+                <span class="font-semibold text-xl">Who are the professionals behind the chat?</span>
+                <svg class="w-9 h-9 transition-transform duration-300 transform" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+                    </path>
+                </svg>
+            </button>
+            <div class="answer p-4 border-t border-gray-200">
+                <p class="text-xl">
+                    Our team is made up of licensed and experienced clinical psychologists, psychiatrists, and counselors who are 
+                    passionate about supporting young people. They are trained to listen, guide, and provide the help you need to 
+                    manage stress, anxiety, depression, or everyday challenges
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t py-8 px-6 my-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-gray-600">© 2025 Change Makers Mind Care. All rights reserved.</div>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-gray-600 hover:text-teal-700">Privacy Policy</a>
+                <a href="#" class="text-gray-600 hover:text-teal-700">Terms</a>
+                <a href="#" class="text-gray-600 hover:text-teal-700">Support</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
